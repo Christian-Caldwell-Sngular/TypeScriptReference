@@ -130,14 +130,14 @@ class Student {
 
 // use the Student class to create a new student
 let myStudent = new Student();
-// give the student a name (if no private access modifier on the class variable, you can do: myStudent.name = 'Chris')
+// give the student a name (if no private access modifier on the class variable, you can do: myStudent.name = 'Chris' or use a set function)
 myStudent.setStudentName('Chris');
 // add some grades using our class function
 myStudent.addStudentAssignmentGrade(95);
 myStudent.addStudentAssignmentGrade(81);
 myStudent.addStudentAssignmentGrade(90); // overall student average is being updated automatically thanks to our private calculateOverallGrade function being called after every grade entry
 
-// now we can check the overall grade of this student using our getter functions (again, if there are no private access modifiers, we can just call them directly. I.e myStudent.overallGrade)
+// now we can check the overall grade of this student using our getter functions (again, if there are no private access modifiers, we can just call them directly or use a set/get. I.e myStudent.overallGrade)
 console.log(myStudent.getStudentName() + ': ' + myStudent.getStudentOverallGrade());
 
 //----------------------------------------------------------------
@@ -151,7 +151,7 @@ class Student2 {
     overallGrade: number = 0; // current average in the class
     assignmentGrades: Array<number> = []; // grade of each assignment taken
 
-    constructor(public name: string) { // you MUST have an access modifier to define the class variable in a constructor if there is no set function
+    constructor(public name: string) { // you MUST have an access modifier to define the class variable in a constructor
         this.name = name;
     }
 
