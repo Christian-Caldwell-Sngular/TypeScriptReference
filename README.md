@@ -11,3 +11,9 @@ A short and sweet TypeScript guide going over and including short examples of th
 - Class using set and get to manipulate class variables
 
 More to be added!
+
+# Running the reference file
+
+1. To compile the TypeScript file down to JavaScript, run the following: `tsc -t es5 typeScriptReference.ts`
+  
+2. Now run the compiled code: `node typeScriptReference.js`
