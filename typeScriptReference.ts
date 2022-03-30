@@ -1,5 +1,5 @@
-// To compile this file run: tsc -t es5 typeScriptNotes.ts
-// To run the compiled file: node typeScriptNotes.js
+// To compile this file run: tsc -t es5 typeScriptReference.ts
+// To run the compiled file: node typeScriptReference.js
 
 // ** access modifiers in TypeScript ** \\
 
